@@ -28,8 +28,43 @@
 				<nav class="nav-main mega-menu">
 					<ul class="nav nav-pills nav-main" id="rox-main-menu">
 						<!-- Drop Down menu Home -->
-						<li class="dropdown rox-submenu-item active"><a href="index.html"
-							class="dropdown-toggle"> Home </a>
+						<?php $menus = Config::get('site.menu'); ?>
+						<?php foreach ($menus as $key => $value) {
+							$active = '';
+							if ($key == 'HOME') {
+								$active = 'active';
+							}
+						?>
+						<li class="dropdown rox-submenu-item {{$active}}">
+							<a <?php if (isset($active['target'])) { echo $active['target'] ;} ?> href="{{$value['url']}}" class="dropdown-toggle"> {{$value['name']}} </a>
+							<?php if (!empty($value['children'])){ ?>
+								<ul class="dropdown-menu">
+									<div class="rox-menu-wrapper">
+										<?php foreach ($value['children'] as $ckey => $cvalue) {
+										?>
+											<li  class="<?php if (!empty($cvalue['children'])){ echo 'dropdown-submenu dropdown';} ?>">
+												<a <?php if (isset($cvalue['target'])) { echo $cvalue['target'] ;} ?> href="{{$cvalue['url']}}"> {{$cvalue['name']}} </a>
+												<?php if (!empty($cvalue['children'])){ ?>	
+												<ul class="dropdown-menu">
+													<div class="rox-menu-wrapper">
+														<?php foreach ($cvalue['children'] as $c3key => $c3value) { ?>
+														<li><a <?php if (isset($c3value['target'])) { echo $c3value['target'] ;} ?> href="{{$c3value['url']}}"> {{$c3value['name']}} </a></li>
+														<?php } ?>
+													</div> 
+												</ul>
+												<?php } ?>
+											</li>
+										<?php } ?>
+									</div>
+								</ul>
+							<?php } ?>
+						</li>
+						<?php } ?>
+
+						<!-- End Of Drop Down Menu Home -->
+						<!-- Drop Down menu Home -->
+						<li class="dropdown rox-submenu-item active">
+							<a href="index.html" class="dropdown-toggle"> Home </a>
 							<ul class="dropdown-menu">
 								<div class="rox-menu-wrapper">
 									<li class="dropdown-submenu dropdown"><a
@@ -39,14 +74,15 @@
 												<li><a href="rev-style-1.html"> Layout One </a></li>
 												<li><a href="rev-style-3.html"> Layout Two </a></li>
 												<li><a href="rev-style-2.html"> Layout Three </a></li>
-											</div>
+											</div> 
 										</ul></li>
 									<li><a href="blog.html"> Magazine View </a></li>
 									<li><a href="full-screen-slider.html"> One Page View </a></li>
 									<li><a href="about-me.html"> Personal Presentation </a></li>
 									<li><a href="sequence-slider-style-1.html"> Creative </a></li>
 								</div>
-							</ul></li>
+							</ul>
+						</li>
 						<!-- End Of Drop Down Menu Home -->
 						<!-- Start Sliders Menu -->
 						<li class="dropdown rox-submenu-item"><a href="#"
