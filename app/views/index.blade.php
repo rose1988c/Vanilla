@@ -5,5 +5,7 @@
 @stop
 
 @section('content')
+    
+    Hello, Welcome/
 
 @stop
