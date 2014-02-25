@@ -1,6 +1,8 @@
 <?php
 
 class ToolController extends BaseController {
+    
+    protected $layout = 'layouts.main';
 
 	/**
 	 * Display a listing of the resource.
@@ -9,7 +11,9 @@ class ToolController extends BaseController {
 	 */
 	public function index()
 	{
-        return View::make('tools.index');
+	    $title = 'Toolkit';
+	    $breadcumb_title = 'Toolkit';
+        $this->layout->content = View::make(get_controller_theme('toolkit'))->with(compact('breadcumb_title', 'title'));
 	}
 
 	/**

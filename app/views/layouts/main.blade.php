@@ -74,31 +74,16 @@
 
     {{-- include the header partial --}}
     @include('theme.right.header')
-        
-    <div class="container">
-
-      <div class="row-fluid">
-          <div class="span12">
-
-            {{-- include the errors partial --}}
-            @include('partials.errors')
-
-            {{-- include content passed from controllers --}}
-            @yield('content')
-          </div>
-      </div>
-
-    </div>
     
-    <footer id="footer" style="margin-top:30px;">
-        <div class="navbar-static-top">
-            <div class="navbar-inner">
-                <div class="container" style="color:#fff;">
-        			<p>Created by <a target="_blank" href="http://github.com/Rose1988c">Rose1988.c</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    {{-- include content passed from controllers --}}
+    @yield('breadcumb')
+        
+    {{-- include the errors partial --}}
+    @include('partials.errors')
+
+    {{-- include content passed from controllers --}}
+    @yield('content')
+    
     
     <!-- Core required JS files -->
     {{ HTML::script('assets/theme_right/js/jquery.js') }}

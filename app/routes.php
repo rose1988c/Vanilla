@@ -13,10 +13,9 @@ Route::get('github', 'HomeController@github'); // open to the world
  */
 Route::group(array('prefix' => 'tool'), function()
 {
-    Route::get('/', function()
-    {
-        return Redirect::to('/');
-    });
+    //Route::get('/', function() { return Redirect::to('/'); });
+    Route::get('/', 'ToolController@index');
+    
     Route::resource('icurl', 'AdminDashboardController');
     Route::resource('users', 'AdminUserController');
     Route::resource('blog', 'AdminBlogController');

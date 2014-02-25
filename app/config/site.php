@@ -14,15 +14,15 @@ return array (
 	'author' => 'rose1988.c@gmail.com',
 	'email' => 'rose1988.c@gmail.com',
 	'menu' => array(
-		'hw_Output_Document(hw_document)' => array(
-			'name' => 'HOME',
+		'Home' => array(
+			'name' => 'Home',
 			'url' => '/',
 			'children' => array(
 
 			),
 		),
-		'BLOG' => array(
-			'name' => 'BLOG',
+		'Blog' => array(
+			'name' => 'Blog',
 			'url' => '/',
 			'children' => array(
 				'技术摘要' => array(
@@ -67,6 +67,30 @@ return array (
 								
 							)
 						)
+					)
+				),
+			),
+		),
+		'Toolkit' => array(
+			'name' => 'Toolkit',
+			'url' => '/tool',
+			'children' => array(
+				array(
+					'name' => '在线PHP测试 工具',
+					'url' => 'javascript:void(0);',
+					'children' => array(
+					)
+				),
+				array(
+					'name' => 'ICurl 工具',
+					'url' => 'javascript:void(0);',
+					'children' => array(
+					)
+				),
+				array(
+					'name' => 'DB2models 工具',
+					'url' => 'javascript:void(0);',
+					'children' => array(
 					)
 				),
 			),

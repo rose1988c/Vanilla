@@ -22,7 +22,7 @@
 $basePath = dirname(__DIR__);
 
 // 框架路径
-define('KERNEL_PATH', $basePath . '/../Laravel4Vendor/laravel');
+define('KERNEL_PATH', $basePath . '/../vendor/laravel');
 
 
 require __DIR__.'/../bootstrap/autoload.php';
