@@ -3,3 +3,10 @@
 composer.phar
 composer.lock
 .DS_Store
+
+# 此为注释 – 将被 Git 忽略
+#*.a # 忽略所有 .a 结尾的文件
+#!lib.a # 但 lib.a 除外
+#/TODO # 仅仅忽略项目根目录下的 TODO 文件,不包括 subdir/TODO
+#doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
+app/storage/ # 忽略目录下的所有文件
