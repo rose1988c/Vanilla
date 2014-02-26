@@ -21,6 +21,17 @@ Route::group(array('prefix' => 'tool'), function()
     Route::resource('blog', 'AdminBlogController');
 });
 
+/** ------------------------------------------
+ *  plug Routes
+ *  ------------------------------------------
+ */
+Route::group(array('prefix' => 'plug'), function()
+{
+    Route::get('/', 'PlugController@index');
+    Route::resource('chrome', 'PlugController@chrome');
+    Route::resource('firefox', 'PlugController@firefox');
+});
+
 /**
  * Password Routes
  * all routes used below are for the password reset/reminders
