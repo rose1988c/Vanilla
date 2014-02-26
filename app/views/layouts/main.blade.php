@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>@yield('title');echo ' - ' . Config::get('site.title_suffix')</title>
+    <title>@yield('title');echo ' - ' . Config::get('site\base.title_suffix')</title>
     <meta name="keywords" content="@yield('keywords')"/>
     <meta name="description" content="@yield('description')">
     <meta name="author" content="{{Config::get('site.author')}}">

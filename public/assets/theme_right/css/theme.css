@@ -1150,15 +1150,11 @@ ul.price-table li:first-child{
 	padding: 20px 0px;
 	font-weight: 500;
 	border-bottom: 0px;
-}
-
-ul.price-table li:nth-child(2){
-	background: #4F4F4F;
-	padding: 20px 0px;
+	text-align: center;
 }
 
 ul.price-table li:last-child{
-	background: #4F4F4F;
+	/*background: #4F4F4F;*/
 	padding: 40px 0px;
 }
 
