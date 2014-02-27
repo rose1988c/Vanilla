@@ -8,21 +8,17 @@
 <section class="clearfix pricingtable-a rox-pricetable">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 heading clearfix" id="Browser">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 heading clearfix">
                 <h2>
-                    LISTS
+                    Plug Detail
                 </h2>
             </div>
             
-            
-            <?php foreach ((array)$plugs as $k => $v) {?>
-            <div class="col-lg4 col-md-4 col-sm-4 col-xs-12 gap-btm">
+            <div class="col-lg12 col-md-12 col-sm-12 col-xs-12 gap-btm">
                 <ul class="price-table list-unstyled level-0 ">
-                    <li> {{$k}} </li>
-                    <?php
-                        shuffle($v);
-                        foreach ((array)$v as $key => $value) { 
-                            if ($key > 4) { break; }
+                    <li> {{$name}} </li>
+                    <?php 
+                        foreach ((array)$plugs as $value) { 
                     ?>
                     <li class="list-detail effect2">
                         <a target="_blank" href="{{$value['url']}}" title="{{$value['desc']}}" >{{$value['title']}}</a>
@@ -44,13 +40,9 @@
                         </span>
                     </li>
                     <?php }?>
-                    <li>
-                      <a target="_blank" href="<?php echo Urls::absolute('/plug/' . $k . '/');?>" title="Webstore">
-                            more </a> 
-                    </li>
+                    <li>....</li>
                 </ul>
             </div>
-            <?php }?>
             
         </div>
     </div>

@@ -106,7 +106,7 @@
     <!--Pretty photo , Smooth progress and Rev Slider and Carosule Autoplay-->
     {{ HTML::script('assets/theme_right/js/pageview/revusliderpages.js') }}
     {{ HTML::script('assets/theme_right/js/pageview/prettyphoto.js') }}
-    {{ HTML::script('assets/theme_right/js/pageview/smoothprogress.js') }}
+    {{-- HTML::script('assets/theme_right/js/pageview/smoothprogress.js') --}}
     {{ HTML::script('assets/theme_right/js/pageview/carosuelautoplay.js') }}
     <!--End of Pretty photo , Smooth progress and Rev Slider-->
     <!--Theme Panel Scrip-->

@@ -28,8 +28,8 @@ Route::group(array('prefix' => 'tool'), function()
 Route::group(array('prefix' => 'plug'), function()
 {
     Route::get('/', 'PlugController@index');
-    Route::resource('chrome', 'PlugController@chrome');
-    Route::resource('firefox', 'PlugController@firefox');
+    Route::resource('{chrome}', 'PlugController@detail');
+    Route::resource('{firefox}', 'PlugController@detail');
 });
 
 /**

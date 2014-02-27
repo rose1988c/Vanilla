@@ -115,25 +115,25 @@ return array (
         'children' => array (
             array (
                 'name' => '浏览器插件',
-                'url' => 'javascript:void(0);',
+                'url' => '/plug',
                 'children' => array (
                     array (
                         'name' => 'Chrome插件',
-                        'url' => 'javascript:void(0);' 
+                        'url' => '/plug/chrome' 
                     ),
                     array (
                         'name' => 'Firefox插件',
-                        'url' => 'javascript:void(0);' 
+                        'url' => '/plug/firefox' 
                     ) 
                 ) 
             ),
             array (
-                'name' => 'Monkey插件',
+                'name' => 'UserScript插件',
                 'url' => 'javascript:void(0);',
                 'children' => array (
                     array (
                         'name' => '1024',
-                        'url' => 'javascript:void(0);' 
+                        'url' => '/plug/userscript' 
                     ) 
                 ) 
             ) 

@@ -107,4 +107,5 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
-require app_path().'/start/functions.php';
+require app_path().'/start/helpers/functions.php';
+require app_path().'/start/helpers/urls.php';

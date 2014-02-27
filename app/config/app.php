@@ -3,7 +3,9 @@
 return array(
 	'debug' => true,
 
-	'url' => 'http://local.laravel4.co.nz',
+	'url' => '4toolkit.com',
+
+    'usehttps' => false,
 
 	'timezone' => 'Pacific/Auckland',
 

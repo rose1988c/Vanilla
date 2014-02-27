@@ -1183,7 +1183,13 @@ ul.price-table li span.star{
 	right: 1px;
 }
 ul.price-table li p{
-	font-family: 微软雅黑;
+	font-family: 'Segoe UI', Arial, 'Microsoft Yahei', Simsun, sans-serif;
+}
+ul.price-table li a{
+	color:#2a6496 !important;
+}
+ul.price-table li a:hover{
+	color:#07ad87 !important;
 }
 
 /*-- Blog update goes here--*/

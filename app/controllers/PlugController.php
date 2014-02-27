@@ -16,7 +16,25 @@ class PlugController extends BaseController {
     {
         $title = 'Plug';
         $breadcumb_title = 'Plug';
-        $this->layout->content = View::make(get_controller_theme('plug'))->with(compact('breadcumb_title', 'title'));
+        
+        $plugs = Config::get('site\plug');
+        
+        $this->layout->content = View::make(get_controller_theme('plug'))->with(compact('breadcumb_title', 'title', 'plugs'));
     }
     
+    public function detail($name){
+        
+        $name = ucfirst($name);
+        
+        $title = 'Plug';
+        $breadcumb_title = 'Plug';
+        
+        $plugs = Config::get('site\plug.' . $name);
+        
+        if (empty($plugs)) {
+            return Redirect::to('plug');
+        }
+        
+        $this->layout->content = View::make(get_controller_theme('plugDetail'))->with(compact('breadcumb_title', 'title', 'plugs', 'name'));
+    }
 }
