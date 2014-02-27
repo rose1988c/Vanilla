@@ -14,30 +14,37 @@
                 </h2>
             </div>
             
-            <div class="col-lg6 col-md-6 col-sm-6 col-xs-6 gap-btm">
-                <ul class="price-table list-unstyled level-0">
+            <div class="col-lg12 col-md-12 col-sm-12 col-xs-12 gap-btm">
+                <ul class="price-table list-unstyled level-0 ">
                     <li> Chrome </li>
-                    <li class="list-detail">
-                            <a target="_blank" href="https://chrome.google.com/webstore/detail/bcennaiejdjpomgmmohhpgnjlmpcjmbg"
-                            title="这个扩展让你可以通过一个工具栏按钮来恢复关闭的标签页。打开“定制工具栏”窗口，把按钮图标拖曳到工具栏的任何地方。点击按钮图标恢复最后关闭的标签页，点击下拉箭头查看最近关闭的标签页列表并选择你要恢复的标签页。">
-                            Undo closed tabs</a>
-                        <span style="float:right;">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
+                    
+                    <?php 
+                        $plug_chromes = Config::get('site\plug.chrome');
+                        foreach ((array)$plug_chromes as $value) { 
+                    ?>
+                    <li class="list-detail effect2">
+                        <a target="_blank" href="{{$value['url']}}" title="{{$value['desc']}}" >{{$value['title']}}</a>
+                        <p>{{$value['desc']}}</p>
+                        <span class="star">
+                            <?php 
+                                list($lstar, $rstar) = explode('-', $value['star']);
+                                if ($lstar > 0) {
+                                    for ($i = 0; $i < $lstar; $i++) {
+                                        echo '<i class="fa fa-star"></i>';
+                                    }
+                                }
+                                if ($rstar > 0) {
+                                    for ($i = 0; $i < $rstar; $i++) {
+                                        echo '<i class="fa fa-star-o"></i>';
+                                    }
+                                }
+                            ?>
                         </span>
                     </li>
-                    <li class="list-detail">
-                        100&amp; uptime </li>
-                    <li class="list-detail">
-                        Branded cpanel </li>
-                    <li class="list-last-detail">
-                        Best support </li>
+                    <?php }?>
                     <li>
-                      <a target="_blank" href="https://chrome.google.com/webstore/detail/holmes/gokficnebmomagijbakglkcmhdbchbhn" title="Chrome Bookmark Search Extension">
-                            Holmes </a> 
+                      <a target="_blank" href="https://chrome.google.com/webstore" title="Webstore">
+                            more </a> 
                     </li>
                 </ul>
             </div>
