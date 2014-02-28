@@ -16,9 +16,21 @@ return array(
         array('title' => 'Currently', 'star' => '4-0', 'url' => 'https://chrome.google.com/webstore/detail/currently/ojhmphdkpgbibohbnpbfiefkgieacjmh', 'desc' => '新标签页 - 天气'),
     ),
     'Firefox' => array(
-    
+        array('title' => 'Adblock Plus', 'star' => '4-0', 'url' => 'https://adblockplus.org/', 'desc' => 'Adblock plus是Adblock的加强版。可以阻挡特定网址及网页上的广告对象（例如图片、Flash）'),
+        array('title' => 'Greasemonkey', 'star' => '4-0', 'url' => 'https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/', 'desc' => '伟大的油猴子'),
+        array('title' => 'Down Them All', 'star' => '4-0', 'url' => 'https://addons.mozilla.org/zh-CN/firefox/addon/downthemall/?src=hp-dl-featured', 'desc' => '批量下载不再愁'),
+        array('title' => 'AutoProxy', 'star' => '4-0', 'url' => 'https://addons.mozilla.org/zh-CN/firefox/addon/autoproxy/?src=hp-dl-featured', 'desc' => '科学上网'),
+        array('title' => 'Video DownloadHelper', 'star' => '4-0', 'url' => 'https://addons.mozilla.org/zh-CN/firefox/addon/video-downloadhelper/?src=hp-dl-mostpopular', 'desc' => '视频流媒体下载'),
+        array('title' => 'Firebug', 'star' => '4-0', 'url' => 'https://addons.mozilla.org/zh-CN/firefox/addon/firebug/?src=hp-dl-mostpopular', 'desc' => 'FireBUG'),
+        array('title' => 'NoScript', 'star' => '4-0', 'url' => 'https://addons.mozilla.org/zh-CN/firefox/addon/noscript/?src=hp-dl-mostpopular', 'desc' => 'NOSCRIPT'),
+        array('title' => 'X-Marks', 'star' => '4-0', 'url' => 'https://addons.mozilla.org/zh-CN/firefox/addon/xmarks-sync/?src=atchan.tk', 'desc' => 'X-Marks'),
     ),
     'Userscript' => array(
+        array('title' => '百度贴吧尾巴', 'star' => '4-0', 'url' => 'http://userscripts.org/scripts/review/152918', 'desc' => '贴吧增强 - Gerald倾情打造'),
+        array('title' => 'MiniblogImgPop', 'star' => '4-0', 'url' => 'http://userscripts.org/scripts/show/83994', 'desc' => 'MiniblogImgPop - 微博浮图'),
+        array('title' => '眼不见心不烦', 'star' => '4-0', 'url' => 'http://userscripts.org/scripts/show/114087', 'desc' => '可屏蔽关键词、用户、推广微博，去除页面广告，恢复双栏版式，还您一个清爽干净的微博！'),
+        array('title' => '贴吧签到', 'star' => '4-0', 'url' => 'http://userscripts.org/scripts/show/141939', 'desc' => '贴吧全体签到'),
+        array('title' => '1024', 'star' => '4-0', 'url' => 'http://userscripts.org/scripts/show/151695', 'desc' => '1024.Caoliu.Plug'),
     
     ),
 );

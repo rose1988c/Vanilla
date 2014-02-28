@@ -45,9 +45,9 @@ return array (
                     ) 
                 ) 
             ) 
-        )
-         
-    ),
+        ) 
+    )
+    ,
     'Toolkit' => array (
         'name' => 'Toolkit',
         'url' => '/tool',
