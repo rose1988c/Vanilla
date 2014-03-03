@@ -9,9 +9,9 @@
 <section class="portfolio-page-head">
     <div class="container">
         <div class="row">
-            <h1>OUR SELECTED <span>WORK</span></h1>
+            <h1>OUR SELECTED <span>TOOL</span></h1>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
+                Simply and Useful
             </p>
         </div>
     </div>
@@ -74,7 +74,7 @@
         <img src="/assets/theme_right/img/toolkit/rw3.png" class="img-responsive" alt="Responsive image">
         <div class="recent-work-item-hover">
             <div class="recent-work-project-title">
-                <h1>Project title</h1>
+                <h1>Project title xx</h1>
                 <button class="btn btn-default">Web design</button>
             </div>
         </div>
@@ -274,6 +274,12 @@
     </div>
 </div>
 
+@stop
 
-
+@section('footer')
+<!--Pageviews-->
+{{ HTML::script('assets/theme_right/js/jquery.isotope.min.js') }}
+{{ HTML::script('assets/theme_right/js/prettyphoto.js') }}
+{{ HTML::script('assets/theme_right/js/isotop.js') }}
+<!--PageViews-->
 @stop

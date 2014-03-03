@@ -113,7 +113,7 @@
     {{ HTML::script('assets/theme_right/js/themes_panel.js') }}
     <!--End of Theme Panel Script-->
     {{ HTML::script('assets/theme_right/js/jquery.easing.1.3.js') }}
-    {{ HTML::script('assets/theme_right/js/bootstrap-progressbar.js') }}
+        {{ HTML::script('assets/theme_right/js/bootstrap-progressbar.js') }}
     {{ HTML::script('assets/theme_right/js/liteaccordion.jquery.js') }}
     {{ HTML::script('assets/theme_right/js/liteaccordion.jquery.min.js') }}
     {{ HTML::script('assets/theme_right/js/jquery.prettyPhoto.js') }}
@@ -129,5 +129,7 @@
     </script>
     <!--End of Google Analytic Code remember to re-configure according to your need-->
 
+    {{-- include footer passed from controllers --}}
+    @yield('footer')
 </body>
 </html>
