@@ -22,11 +22,11 @@
                     <?php
                         shuffle($v);
                         foreach ((array)$v as $key => $value) { 
-                            if ($key > 4) { break; }
+                            //if ($key > 8) { break; }
                     ?>
                     <li class="list-detail effect2">
                         <a target="_blank" href="{{$value['url']}}" title="{{$value['desc']}}" >{{$value['title']}}</a>
-                        <p>{{$value['desc']}}</p>
+<!--                         <p>{{$value['desc']}}</p> -->
                         <span class="star">
                             <?php 
                                 list($lstar, $rstar) = explode('-', $value['star']);
@@ -45,7 +45,7 @@
                     </li>
                     <?php }?>
                     <li>
-                      <a target="_blank" href="<?php echo Urls::absolute('/plug/' . $k . '/');?>" title="Webstore">
+                      <a href="<?php echo Urls::absolute('/plug/' . $k . '/');?>" title="Webstore">
                             more </a> 
                     </li>
                 </ul>

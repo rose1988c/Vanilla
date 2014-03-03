@@ -40,7 +40,10 @@
                         </span>
                     </li>
                     <?php }?>
-                    <li>....</li>
+                   <li>
+                      <a href="<?php echo Urls::absolute('/plug/');?>" title="Webstore">
+                            back </a> 
+                    </li>
                 </ul>
             </div>
             

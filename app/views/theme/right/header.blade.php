@@ -6,7 +6,7 @@
 				<a class="logo navbar-brand" href="index.html"></a>
 			</div>
 			<div id="rox-search" class="search">
-				<form id="searchForm" action="#blank" method="post">
+				<form id="searchForm" action="/search/" method="post">
 					<div class="input-group">
 						<input type="text" class="form-control search" name="search"
 							id="search"
