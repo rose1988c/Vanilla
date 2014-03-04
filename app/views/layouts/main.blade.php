@@ -65,7 +65,7 @@
     
 
     <!-- favicon -->
-    <link href="favicon.png" type="image/x-icon" rel="shortcut icon" />
+    {{ HTML::style('favicon.png', array('rel' => 'shortcut icon', 'type' => 'image/x-icon')) }}
   </head>
 <body>
 
