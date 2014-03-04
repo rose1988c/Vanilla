@@ -15,9 +15,9 @@ Route::group(array('prefix' => 'tool'), function()
 {
     //Route::get('/', function() { return Redirect::to('/'); });
     Route::get('/', 'ToolController@index');
+    Route::resource('php-on-line', 'ToolController@phpOnLine');
     
     Route::resource('icurl', 'AdminDashboardController');
-    Route::resource('users', 'AdminUserController');
     Route::resource('blog', 'AdminBlogController');
 });
 

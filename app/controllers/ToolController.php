@@ -15,6 +15,12 @@ class ToolController extends BaseController {
 	    $breadcumb_title = 'Toolkit';
         $this->layout->content = View::make(get_controller_theme('toolkit'))->with(compact('breadcumb_title', 'title'));
 	}
+	
+	public function phpOnLine(){
+	    $title = 'php-on-line';
+	    $breadcumb_title = 'php-on-line';
+        $this->layout->content = View::make(get_controller_theme('toolkitPhpOnLine'))->with(compact('breadcumb_title', 'title'));
+	}
 
 	/**
 	 * Show the form for creating a new resource.

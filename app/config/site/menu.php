@@ -54,7 +54,8 @@ return array (
         'children' => array (
             array (
                 'name' => '在线PHP测试 工具',
-                'url' => 'javascript:void(0);',
+                'url' => Urls::absolute('/tool/php-on-line/'),
+                'target' => 'target="_blank"',
                 'children' => array () 
             ),
             array (
