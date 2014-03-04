@@ -10,11 +10,8 @@
             请在下方输入PHP代码:
     </h3>
         <form action="" method="POST">
-            <textarea cols="100" rows="20" name="content"><?php if (isset($_POST['code'])) { echo stripcslashes($_POST['code']); } else { echo '<?php echo \'hello baby\';?>'; } ?></textarea>
+            <textarea cols="100" rows="20" name="content"><?php if (isset($_POST['content'])) { echo stripcslashes($_POST['content']); } else { echo '<?php echo \'hello baby\';?>'; } ?></textarea>
             <br/>
-            <?php if (isset($_POST['code'])) { ?>
-            <input type="reset" name="sub" value="重置"/>
-            <?php }?>
             <input type="submit" name="reset" value="执行"/>
         </form>
     </div>
@@ -37,6 +34,14 @@
         function eval_php($content)
         {
             ob_start();
+            
+            if (strpos($content, '<?php') === false){
+                $content = '<?php ' . $content;
+            }
+            if (strpos($content, '?>') === false){
+                $content .= '?>';
+            }
+            
             eval("?>$content<?php ");
             $output = ob_get_contents();
             ob_end_clean();
