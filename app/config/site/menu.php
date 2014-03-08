@@ -53,6 +53,13 @@ return array (
         'url' => '/tool',
         'children' => array (
             array (
+                'name' => '短网址YOURLS',
+                'url' => 'http://url.zxzwb.com/admin/index.php',
+                'button' => 'yourls',
+                'class' => '',
+                'img' => '/assets/theme_right/images/portfolio/rw11.png'
+            ),
+            array (
                 'name' => '在线PHP测试 工具',
                 'url' => Urls::absolute('/tool/php-on-line/'),
                 'target' => 'target="_blank"',

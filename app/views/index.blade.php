@@ -5,7 +5,7 @@
 @stop
 
 @section('content')
-    
-    Hello, Welcome/
-
+    <div style="height: 800px;">
+        <h2>Hello, Welcome</h2>
+    </div>
 @stop
