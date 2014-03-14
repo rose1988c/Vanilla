@@ -130,6 +130,6 @@
     <!--End of Google Analytic Code remember to re-configure according to your need-->
 
     {{-- include footer passed from controllers --}}
-    @yield('footer')
+    @include('theme.right.footer')
 </body>
 </html>
